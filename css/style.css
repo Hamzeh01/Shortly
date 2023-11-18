@@ -613,6 +613,10 @@ video {
   width: 100%;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -668,14 +672,24 @@ video {
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
-.bg-cyan {
+.border-secondary-light {
+  --tw-border-opacity: 1;
+  border-color: hsl(257 7% 73% / var(--tw-border-opacity));
+}
+
+.bg-background-light {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
+.bg-primary-main {
   --tw-bg-opacity: 1;
   background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
 }
 
-.bg-darkViolet {
+.bg-background-main {
   --tw-bg-opacity: 1;
-  background-color: hsl(257 27% 26% / var(--tw-bg-opacity));
+  background-color: hsl(260 8% 14% / var(--tw-bg-opacity));
 }
 
 .p-6 {
@@ -709,14 +723,19 @@ video {
   font-weight: 700;
 }
 
-.text-grayishViolet {
-  --tw-text-opacity: 1;
-  color: hsl(257 7% 63% / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-secondary-main {
+  --tw-text-opacity: 1;
+  color: hsl(257 7% 53% / var(--tw-text-opacity));
+}
+
+.text-secondary-dark {
+  --tw-text-opacity: 1;
+  color: hsl(257 7% 33% / var(--tw-text-opacity));
 }
 
 /* HAMBURGER MENU */
@@ -768,13 +787,32 @@ video {
   transform: rotate(-45deg) translateY(8px) translateX(-8px);
 }
 
-.hover\:text-veryDarkViolet:hover {
+.hover\:text-secondary-dark:hover {
+  --tw-text-opacity: 1;
+  color: hsl(257 7% 33% / var(--tw-text-opacity));
+}
+
+.hover\:text-secondary-main:hover {
+  --tw-text-opacity: 1;
+  color: hsl(257 7% 53% / var(--tw-text-opacity));
+}
+
+.hover\:text-background-dark:hover {
+  --tw-text-opacity: 1;
+  color: hsl(260 8% 10% / var(--tw-text-opacity));
+}
+
+.hover\:text-background-main:hover {
   --tw-text-opacity: 1;
   color: hsl(260 8% 14% / var(--tw-text-opacity));
 }
 
 .hover\:opacity-70:hover {
   opacity: 0.7;
+}
+
+.hover\:opacity-90:hover {
+  opacity: 0.9;
 }
 
 .focus\:outline-none:focus {
