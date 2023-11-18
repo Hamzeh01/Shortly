@@ -46,9 +46,47 @@
             class="items-center hidden space-x-6 font-bold text-grayishViolet lg:flex"
           >
             <div class="hover:text-veryDarkViolet">Login</div>
-            <a href="#" class="px-8 py-5 font-bold text-white rounded-full bg-cyan hover:opacity-70">Sign Up</a>
-          </div> 
+            <a
+              href="#"
+              class="px-8 py-5 font-bold text-white rounded-full bg-cyan hover:opacity-70"
+              >Sign Up</a
+            >
+          </div>
           <!-- right buttons menu: start -->
+
+          <!-- Hamburger Button -->
+          <button
+            id="menu-btn"
+            class="block hamburger lg:hidden focus:outline-none"
+            type="button"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+
+          <!-- mobile menu: start -->
+          <div
+            id="mobile-menu"
+            class="absolute z-50 hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20"
+          >
+            <div
+              class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
+            >
+              <a href="#" class="w-full text-center">Features</a>
+              <a href="#" class="w-full text-center">Pricing</a>
+              <a href="#" class="w-full text-center">Resources</a>
+              <a
+                href="#"
+                class="w-full pt-6 text-center border-t border-gray-400"
+                >Login</a
+              >
+              <a href="#" class="w-full py-3 text-center rounded-full bg-cyan"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+          <!-- mobile menu: end -->
         </div>
       </nav>
       <!-- navbar: end -->
