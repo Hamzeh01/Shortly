@@ -28,29 +28,17 @@
           <div class="flex items-center space-x-20">
             <img src="images/logo.svg" alt="logo" />
             <div class="hidden space-x-6 font-bold lg:flex">
-              <a href="#" class="hover:text-secondary-main text-secondary-dark"
-                >Features</a
-              >
-              <a href="#" class="hover:text-secondary-main text-secondary-dark"
-                >Pricing</a
-              >
-              <a href="#" class="hover:text-secondary-main text-secondary-dark"
-                >Resources</a
-              >
+              <a href="#" class="link">Features</a>
+              <a href="#" class="link">Pricing</a>
+              <a href="#" class="link">Resources</a>
             </div>
           </div>
           <!-- logo & menu container: end -->
 
           <!-- right buttons menu: start -->
-          <div
-            class="items-center hidden space-x-6 font-bold text-secondary-dark lg:flex"
-          >
-            <div class="cursor-pointer hover:text-background-main">Login</div>
-            <a
-              href="#"
-              class="px-8 py-5 font-bold text-white rounded-full bg-primary-main hover:opacity-70"
-              >Sign Up</a
-            >
+          <div class="items-center hidden space-x-6 font-bold lg:flex">
+            <div class="login">Login</div>
+            <a href="#" class="sign-up">Sign Up</a>
           </div>
           <!-- right buttons menu: start -->
 
@@ -93,5 +81,36 @@
       </nav>
       <!-- navbar: end -->
     </header>
+
+    <!-- hero section: start -->
+    <section id="hero">
+      <div class="container flex flex-col-reverse p-6 mx-auto lg:flex-row">
+        <div class="flex flex-col space-y-12 mb-44 lg:mt-16 lg:w-1/2 xl:mb-52">
+          <h1
+            class="text-5xl font-bold text-center lg:text-6xl lg:max-w-md lg:text-left"
+          >
+            More than just shorter links
+          </h1>
+          <p
+            class="text-2xl text-center lg:max-w-md lg:text-left text-secondary-light"
+          >
+            Build your brand's recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <div class="mx-auto lg:mx-0">
+            <a
+              href="#"
+              class="px-10 py-6 text-2xl font-bold rounded-full text-background-light bg-primary-main lg:py-4 hover:opacity-70"
+              >Get Started</a
+            >
+          </div>
+        </div>
+
+        <div class="mx-auto mb-24 md:w-180 lg:mb-0 lg:w-1/2">
+          <img src="images/illustration-working.svg" alt="img" />
+        </div>
+      </div>
+    </section>
+    <!-- hero section: end -->
   </body>
 </html>
