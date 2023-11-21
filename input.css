@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .link {
+    @apply hover:text-secondary-main text-secondary-dark;
+  }
+
+  .login {
+    @apply cursor-pointer hover:text-secondary-main text-secondary-dark;
+  }
+
+  .sign-up {
+    @apply px-8 py-5 font-bold text-white rounded-full bg-primary-main hover:opacity-70;
+  }
+}
+
 /* HAMBURGER MENU */
 
 .hamburger {
@@ -23,7 +37,7 @@
   left: 0;
   background: #9c9aa6;
   transform: rotate(0);
-  transition: all 0.7s;
+  transition: all 0.3s;
 }
 
 .hamburger-middle {
