@@ -4,15 +4,15 @@
 
 @layer components {
   .link {
-    @apply hover:text-secondary-main text-secondary-dark;
+    @apply hover:text-darkViolet text-veryDarkViolet;
   }
 
   .login {
-    @apply cursor-pointer hover:text-secondary-main text-secondary-dark;
+    @apply cursor-pointer hover:text-grayishViolet text-veryDarkViolet;
   }
 
   .sign-up {
-    @apply px-8 py-5 font-bold text-white rounded-full bg-primary-main hover:opacity-70;
+    @apply px-8 py-5 font-bold text-white rounded-full bg-cyan hover:opacity-70;
   }
 }
 
