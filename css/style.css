@@ -785,6 +785,12 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
 .space-y-12 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
@@ -834,9 +840,9 @@ video {
   border-color: hsl(257 2% 68% / var(--tw-border-opacity));
 }
 
-.bg-gray-100 {
+.bg-cyan {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: hsl(180 61% 54% / var(--tw-bg-opacity));
 }
 
 .bg-darkViolet {
@@ -844,24 +850,9 @@ video {
   background-color: hsl(257 22% 31% / var(--tw-bg-opacity));
 }
 
-.bg-cyan {
+.bg-gray-100 {
   --tw-bg-opacity: 1;
-  background-color: hsl(180 61% 54% / var(--tw-bg-opacity));
-}
-
-.bg-grayishViolet {
-  --tw-bg-opacity: 1;
-  background-color: hsl(257 2% 68% / var(--tw-bg-opacity));
-}
-
-.bg-cyanLight {
-  --tw-bg-opacity: 1;
-  background-color: hsl(180 61% 74% / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-veryDarkViolet {
@@ -869,8 +860,17 @@ video {
   background-color: hsl(260 3% 19% / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .p-12 {
   padding: 3rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-3 {
@@ -969,24 +969,14 @@ video {
   font-style: italic;
 }
 
-.text-gray-400 {
+.text-cyan {
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: hsl(180 61% 54% / var(--tw-text-opacity));
 }
 
 .text-grayishViolet {
   --tw-text-opacity: 1;
   color: hsl(257 2% 68% / var(--tw-text-opacity));
-}
-
-.text-cyan {
-  --tw-text-opacity: 1;
-  color: hsl(180 61% 54% / var(--tw-text-opacity));
 }
 
 .text-red {
@@ -999,6 +989,11 @@ video {
   color: hsl(260 3% 19% / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .placeholder-darkViolet::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: hsl(257 22% 31% / var(--tw-placeholder-opacity));
@@ -1007,6 +1002,12 @@ video {
 .placeholder-darkViolet::placeholder {
   --tw-placeholder-opacity: 1;
   color: hsl(257 22% 31% / var(--tw-placeholder-opacity));
+}
+
+#cta {
+  background-image: url('../images/bg-boost-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* HAMBURGER MENU */
@@ -1061,11 +1062,6 @@ video {
 .hover\:bg-cyanLight:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(180 61% 74% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-cyan:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(180 61% 54% / var(--tw-bg-opacity));
 }
 
 .hover\:opacity-70:hover {
@@ -1136,8 +1132,18 @@ video {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
