@@ -38,6 +38,27 @@
   @apply flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet;
 }
 
+.footer-link {
+  @apply capitalize text-grayishViolet hover:text-cyan;
+}
+
+.footer-menu {
+  @apply items-center w-full flex-column md:items-start;
+}
+
+.footer-title {
+  @apply mb-6 font-bold text-white capitalize;
+}
+
+.footer-link-container {
+  @apply items-center space-y-3 flex-column md:items-start;
+}
+
+.ficon:hover {
+  filter: invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg)
+    brightness(89%) contrast(85%);
+}
+
 /* HAMBURGER MENU */
 
 .hamburger {
