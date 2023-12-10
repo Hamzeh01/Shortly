@@ -1,5 +1,3 @@
-import swal from "sweetalert";
-
 const menuBtnEl = document.getElementById("menu-btn");
 const mobileMenuEl = document.getElementById("mobile-menu");
 
@@ -46,7 +44,9 @@ function submitFromRequest(e) {
     errorMessageEl.innerHTML = "Invalid URL";
     inputEl.style.border = "3px solid hsl(0, 82%, 72%)";
   } else {
-    errorMessageEl.innerHTML = "";
-    swal("Good job!", "You clicked the button!", "success");
+    errorMessageEl.innerHTML = "Your shortened URL is ready";
+    errorMessageEl.classList.remove("text-red");
+    errorMessageEl.style.color = "hsl(180, 61%, 54%)";
+    inputEl.style.border = "3px solid hsl(180, 61%, 54%)";
   }
 }
