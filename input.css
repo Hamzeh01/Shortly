@@ -18,16 +18,35 @@
   }
 
   .sign-up {
-    @apply px-8 py-5 font-bold text-white rounded-full bg-cyan hover:opacity-70;
+    @apply px-8 py-5 font-bold text-darkViolet rounded-full bg-cyan hover:opacity-70;
+  }
+
+  .btn {
+    @apply px-10 py-6 text-darkViolet bg-cyan focus:outline-none font-bold;
+  }
+  .btn-start {
+    @apply text-2xl  rounded-full lg:py-4 hover:opacity-70;
   }
 
   .btn-copy {
-    @apply px-10 py-6 text-white rounded-lg bg-cyan hover:opacity-70 focus:outline-none;
+    @apply rounded-lg hover:opacity-70;
+  }
+
+  .btn-shorten {
+    @apply rounded-lg hover:bg-cyanLight;
   }
 }
 
 .flex-column {
   @apply flex flex-col;
+}
+
+.url-link {
+  @apply font-bold text-center text-veryDarkViolet md:text-left;
+}
+
+.shortened-link-container {
+  @apply items-center justify-end flex-1 space-x-3 space-y-3 flex-column md:flex-row md:space-y-0;
 }
 
 .box-item-container {
