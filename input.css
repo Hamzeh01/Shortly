@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 #cta {
   background-image: url("../images/bg-boost-desktop.svg");
   background-repeat: no-repeat;
