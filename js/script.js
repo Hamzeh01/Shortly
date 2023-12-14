@@ -2,6 +2,7 @@ const menuBtnEl = document.getElementById("menu-btn");
 const mobileMenuEl = document.getElementById("mobile-menu");
 
 const formEl = document.getElementById("shorten-form");
+const parentListEl = document.getElementById("parent");
 const inputEl = document.getElementById("shorten-input");
 const errorMessageEl = document.getElementById("shorten-error");
 
@@ -50,3 +51,26 @@ function submitFromRequest(e) {
     inputEl.style.border = "3px solid hsl(180, 61%, 54%)";
   }
 }
+
+formEl.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const originalLink = inputEl.value;
+  const apiUrl = `https://api.shrtco.de/v2/shorten?url=${originalLink}`;
+
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    console.log(data);
+    let link = document.createElement("li");
+    link.innerHTML = `<div class="shorted-item">
+        <p class="url-link">${originalLink}</p>
+        <div class="shortened-link-container">
+          <div class="font-bold text-cyan">${data.result.full_short_link}</div>
+          <button class="btn btn-copy">Copy</button>
+        </div>
+      </div>`;
+    parentListEl.prepend(link);
+  } catch (e) {
+    console.error(e);
+  }
+});

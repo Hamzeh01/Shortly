@@ -62,12 +62,18 @@
             <div
               class="items-center justify-center w-full space-y-6 font-bold text-white rounded-sm flex-column"
             >
-              <a href="#" class="w-full text-center">Features</a>
-              <a href="#" class="w-full text-center">Pricing</a>
-              <a href="#" class="w-full text-center">Resources</a>
+              <a href="#" class="w-full text-center hover:text-grayishViolet"
+                >Features</a
+              >
+              <a href="#" class="w-full text-center hover:text-grayishViolet"
+                >Pricing</a
+              >
+              <a href="#" class="w-full text-center hover:text-grayishViolet"
+                >Resources</a
+              >
               <a
                 href="#"
-                class="w-full pt-6 text-center border-t border-grayishViolet"
+                class="w-full pt-6 text-center border-t border-grayishViolet hover:text-grayishViolet"
                 >Login</a
               >
               <a
@@ -128,36 +134,38 @@
             class="absolute text-sm italic left-7 bottom-3 text-red"
           ></div>
         </form>
-        <!-- link item -->
-        <div
-          class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
-        >
-          <p class="url-link">https://frontendmentor.io</p>
-          <div class="shortened-link-container">
-            <div class="font-bold text-cyan">https://rel.ink/k4IKyk</div>
-            <button class="btn btn-copy">Copy</button>
-          </div>
-        </div>
-        <!-- link item -->
-        <div
-          class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
-        >
-          <p class="url-link">https://frontendmentor.io</p>
-          <div class="shortened-link-container">
-            <div class="font-bold text-cyan">https://rel.ink/k4IKyk</div>
-            <button class="btn btn-copy">Copy</button>
-          </div>
-        </div>
-        <!-- link item -->
-        <div
-          class="items-center justify-between w-full p-6 bg-white rounded-lg flex-column md:flex-row"
-        >
-          <p class="url-link">https://frontendmentor.io</p>
-          <div class="shortened-link-container">
-            <div class="font-bold text-cyan">https://rel.ink/k4IKyk</div>
-            <button class="btn btn-copy">Copy</button>
-          </div>
-        </div>
+        <ul class="space-y-6">
+          <!-- link item -->
+          <li id="parent">
+            <div class="shorted-item">
+              <p class="url-link">https://frontendmentor.io</p>
+              <div class="shortened-link-container">
+                <div class="font-bold text-cyan">https://rel.ink/k4IKyk</div>
+                <button class="btn btn-copy">Copy</button>
+              </div>
+            </div>
+          </li>
+          <!-- link item -->
+          <li
+            class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
+          >
+            <p class="url-link">https://frontendmentor.io</p>
+            <div class="shortened-link-container">
+              <div class="font-bold text-cyan">https://rel.ink/k4IKyk</div>
+              <button class="btn btn-copy">Copy</button>
+            </div>
+          </li>
+          <!-- link item -->
+          <li
+            class="items-center justify-between w-full p-6 bg-white rounded-lg flex-column md:flex-row"
+          >
+            <p class="url-link">https://frontendmentor.io</p>
+            <div class="shortened-link-container">
+              <div class="font-bold text-cyan">https://rel.ink/k4IKyk</div>
+              <button class="btn btn-copy">Copy</button>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <!-- shorten section: end -->
@@ -262,7 +270,7 @@
       <div
         class="container items-center justify-around mx-auto space-y-16 flex-column md:flex-row md:space-y-0 md:items-start"
       >
-        <img src="images/logo.svg" alt="logo" />
+        <img src="images/logo-footer.svg" alt="logo" />
         <!-- menu container: start -->
         <div
           class="space-y-16 flex-column md:space-x-20 md:flex-row md:space-y-0"

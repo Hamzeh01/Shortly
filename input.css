@@ -56,6 +56,10 @@ html {
   @apply font-bold text-center text-veryDarkViolet md:text-left;
 }
 
+.shorted-item {
+  @apply items-center justify-between w-full p-6 bg-white rounded-lg flex-column md:flex-row;
+}
+
 .shortened-link-container {
   @apply items-center justify-end flex-1 space-x-3 space-y-3 flex-column md:flex-row md:space-y-0;
 }
@@ -85,8 +89,8 @@ html {
 }
 
 .ficon:hover {
-  filter: invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg)
-    brightness(89%) contrast(85%);
+  filter: invert(70%) sepia(61%) saturate(464%) hue-rotate(130deg)
+    brightness(250%) contrast(85%);
 }
 
 /* HAMBURGER MENU */
